@@ -1,9 +1,9 @@
 Q1
 CREATE TABLE departments (
-department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(20) NOT NULL,
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 	ON UPDATE CURRENT_TIMESTAMP,
+  department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(20) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 	ON UPDATE CURRENT_TIMESTAMP,
 );
 
 Q2
@@ -62,7 +62,6 @@ ORDER BY
 
 Q7
 SELECT name FROM peoole WHERE age between 20 AND 29 gender = 2
-UNION
 SELECT name FROM peoole WHERE age between 40 AND 49 gender = 1
 
 Q8
@@ -76,7 +75,7 @@ SELECT peoole.name,departments.name,reports.content FROM peoole
 INSERT JOIN department ON
 peoole.department_id = departments.department_id INSERT JOIN reports ON
 peoole.person_id = reports.person_id
-INSERT JOIN departments ON peoole.department_id = departments.department_id;
+INNER JOIN departments ON peoole.department_id = departments.department_id;
 
 Q11
 SELECT name FROM peoole LEFT OUTER JOIN reports ON
