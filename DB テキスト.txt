@@ -1,0 +1,25 @@
+INSERT INTO reports (name, email, age, gender)
+VALUES
+('板橋たろう', 'tanaka@gizumo.jp', 20, 1),
+('練馬しんじ', 'tanaka@gizumo.jp', 25, 1),
+('品川きょうこ', 'tanaka@gizumo.jp', 30, 2),
+('渋谷はる', 'tanaka@gizumo.jp', 35, 1),
+('新宿あすか', 'tanaka@gizumo.jp', 40, 2),
+('杉並しずか', 'tanaka@gizumo.jp', 45, 2),
+('葛飾ほくさい', 'tanaka@gizumo.jp', 50, 1),
+('文京はくさん', 'tanaka@gizumo.jp', 55, 1),
+('目黒けいこ', 'tanaka@gizumo.jp', 60, 2),
+('太田みちひこ', 'tanaka@gizumo.jp', 65, 1)；
+
+INSERT INTO reports
+VALUES
+(1,'研修を行った'),
+(1',研修を行った'),
+(2',研修を行った'),
+(2',研修を行った'),
+(3',研修を行った'),
+(3',研修を行った'),
+(3',研修を行った'),
+(6',研修を行った'),
+(6',研修を行った'),
+(7',研修を行った');
