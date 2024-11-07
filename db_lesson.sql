@@ -61,8 +61,9 @@ ORDER BY
 'created_at';
 
 Q7
-SELECT name FROM peoole WHERE age between 20 AND 29 gender = 2
-SELECT name FROM peoole WHERE age between 40 AND 49 gender = 1
+SELECT
+name FROM peoole WHERE age between 20 AND 29 gender = 2
+name FROM peoole WHERE age between 40 AND 49 gender = 1;
 
 Q8
 SELECT name FROM peoole WHERE department_id = 1 ORDER BY age ASC;
