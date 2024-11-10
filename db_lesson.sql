@@ -1,9 +1,9 @@
 Q1
 CREATE TABLE departments (
-  department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(20) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 	ON UPDATE CURRENT_TIMESTAMP,
+department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(20) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 	ON UPDATE CURRENT_TIMESTAMP,
 );
 
 Q2
@@ -59,11 +59,13 @@ WHERE
 'department_id' = 1
 ORDER BY
 'created_at';
+peooleテーブルから名前、メールアドレス、年齢を表示するが、
+条件がカラムのdepartment_idが1だけのレコードを取得し、
+レコードが作成された日付が早い順番で並び替えする。
 
 Q7
 SELECT
-name FROM peoole WHERE age between 20 AND 29 gender = 2
-name FROM peoole WHERE age between 40 AND 49 gender = 1;
+name FROM peoole WHERE age between 20 AND 29 gender = 2 AND age between 40 AND 49 gender = 1;
 
 Q8
 SELECT name FROM peoole WHERE department_id = 1 ORDER BY age ASC;
